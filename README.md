@@ -1,6 +1,6 @@
 1. Clone this project inside a new folder using below command.
 ```
-git clone https://gitlab.com/appslabz/eyee-web-api-module.git .
+git clone https://github.com/Mahendran-Sakkarai/tracking-api.git .
 ```
 
 2. Run the below command to initialize the default files.
@@ -34,11 +34,11 @@ return [
             // 'useFileTransport' => false,
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
-                'Host' => 'smtp.appslabz.com',
+                'Host' => '---- host name ---',
                 'Port' => 587,
                 // 'SMTPAuth' => true,
-                'Username' => 'no-reply@appslabz.com',
-                'Password' => 'Appslabz.2016',
+                'Username' => '---- email id ----',
+                'Password' => '---- password ----',
                 'encryption' => 'tls',
                 'streamOptions' => [
                     'ssl' => [
@@ -67,9 +67,9 @@ return [
 ```
     <?php
     return [
-        "frontend_url" => "http://localhost/indiantax/frontend/web/",
-        "backend_url" => "http://localhost/indiantax/backend/web/",
-        "api_url" => "http://localhost/indiantax/api/web/",
+        "frontend_url" => "http://localhost/tracker/frontend/web/",
+        "backend_url" => "http://localhost/tracker/backend/web/",
+        "api_url" => "http://localhost/tracker/api/web/",
     ];
 ```
 Note: Change the urls according to your setup. And `/` at the end of the url is compulsory.
